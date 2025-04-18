@@ -1,0 +1,143 @@
+/* Common styles for both Login and Signup */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: linear-gradient(rgba(80, 83, 170, 0.8), rgb(97, 7, 7)),
+                url('https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .glass-card {
+    width: 100%;
+    max-width: 400px; /* Limit max width for the container */
+    padding: 2rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px); /* Increased blur for stronger glass effect */
+    -webkit-backdrop-filter: blur(15px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border for clearer glass effect */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transform-origin: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .glass-card:hover {
+    transform: translateY(-5px); /* Enhanced hover effect */
+  }
+  
+  .animate-submit {
+    animation: submitPulse 1s ease;
+  }
+  
+  @keyframes submitPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.98); }
+    100% { transform: scale(1); }
+  }
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .auth-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+    color: #60A5FA;
+  }
+  
+  .auth-header h2 {
+    font-size: 2rem; /* Increased font size for better prominence */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .auth-header p {
+    color: #E5E7EB;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1.5rem; /* Increased space between input fields */
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #9CA3AF;
+  }
+  
+  input {
+    width: 335px;
+    max-width: 100%; /* Ensure it doesn't overflow */
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border for glass effect */
+    border-radius: 0.5rem;
+    color: white;
+    transition: all 0.3s ease;
+    font-size: 1rem; /* Slightly bigger font for readability */
+  }
+  
+  input::placeholder {
+    color: #9CA3AF;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #60A5FA;
+    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+  }
+  
+  .submit-btn {
+    width: 100%; /* Set width to 100% to match the input field */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    padding: 0.75rem 1rem;
+    background: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    font-size: 1.1rem; /* Slightly bigger font for better prominence */
+  }
+  
+  .submit-btn:hover:not(:disabled) {
+    background: #2563EB;
+    transform: translateY(-2px); /* Stronger hover effect */
+  }
+  
+  .submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #E5E7EB;
+  }
+  
+  .auth-link {
+    color: #60A5FA;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .auth-link:hover {
+    color: #3B82F6;
+  }
+  
