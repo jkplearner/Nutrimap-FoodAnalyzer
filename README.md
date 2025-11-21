@@ -13,11 +13,6 @@
   - 📊 Bar Graphs for macronutrient comparisons
   - 🔸 Spider Charts for detailed nutritional differences
 - 📈 **Data Analysis (DA)** – Classifies food items using a machine learning model.
-- 🧠 **Model Performance**:
-  - ✅ Accuracy: **85%**
-  - ✅ Precision: **83%**
-  - ✅ Recall: **84%**
-  - ✅ F1 Score: **83%**
 
 ---
 
@@ -82,7 +77,6 @@ The application includes a data analysis module to assess and classify food prod
 - Nutritional classification based on macro & micronutrients
 - Real-time graph generation using JavaScript charting libraries
 - Spider and bar graphs to visualize nutrient differentials
-- Model trained and validated with classification metrics >80%
 
 ---
 
